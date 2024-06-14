@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(common.css);
+
+
+
+/* 상세보기 */
+#section01{
+    margin-bottom: 100px;
+}
+/* 전체적인 스타일 */
+
+.container {
+
+}
+
+.page-wrapper {
+
+}
+
+.page-title {
+
+}
+
+.expert-side{
+    width: 250px;
+    margin-right: 50px;
+    position: sticky;
+    top: 20px;
+    height: 100%;
+}
+
+/* 페이지 내용 */
+
+.page-content {
+
+}
+
+.divide-wrapper {
+    display: flex;
+}
+
+.option-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    overflow: hidden;
+}
+.time-list{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.time-list::-webkit-scrollbar {
+    display: none;
+}
+.time-list li{
+    padding: 10px;
+    border-radius: 5px;
+    height: 35px;
+    background: #bfe7e7;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* 옵션 섹션 */
+.option-wrapper p {
+    position: relative;
+    cursor: pointer;
+}
+
+.option-wrapper p:before{
+    transition: 0.5s ease;
+    content: "\f077";
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    color: #666;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-family: "Font Awesome 6 free";
+    display: block;
+    font-weight: 600;
+}
+.option-wrapper p.active::before{
+    transform: translateY(-50%) rotate(180deg);
+}
+.option-list {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.option-list.btn li {
+    padding: 5px;
+    background: #ededed;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.option-list.check li{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-size: 14px;
+}
+
+.option-list li label {
+    
+}
+
+.option-list li input {
+    
+}
+
+/* 각 옵션 섹션 */
+.counseling-method,
+.gender,
+.rating,
+.grade,
+.situation,
+.state {
+    
+}
+
+/* 전문가 리스트 */
+.expert-list {
+    width: calc(100% - 300px);
+}
+
+.expert-list > li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.expert-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 전문가 정보 */
+.info-head {
+
+}
+
+.head-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.head-star {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.head-star i {
+    color: #ffd400;
+}
+
+.evaluate-count {
+    font-size: 16px;
+    color: #ddd;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+/* 전문가 본문 */
+.expert-body {
+  
+}
+
+.body-title {
+    color: #999;
+}
+
+.type-consultation {
+    display: flex;
+}
+
+.type-consultation li {
+    
+}
+
+.type-consultation img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+/* 전문가 이미지 */
+.expert-image {
+
+}
+
+.expert-image figure {
+    width: 120px;
+    max-height: 160px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.expert-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 전문가 프로필 링크 */
+.expert-info a {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+.expert-info a.link{
+    width: 100%;
+    font-weight: 600;
+}
+.expert-info a.link i {
+   
+}
+
+
+/* 풀캘린더 */
+
+#calendar {
+    max-width: 300px;
+    margin: 20px auto;
+}
+.fc-daygrid-day.fc-day-today {
+    background-color: #e6f7ff;
+}
+.fc-daygrid-day.active {
+    background-color: #007bff;
+    color: white;
+}
