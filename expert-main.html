@@ -59,7 +59,7 @@
                                     <form action="#" method="#">
                                         <div class="date mb-30">
                                             <p class="mb-10">가능일시</p>
-                                            <div class="calendar">
+                                            <div class="calendar option-list">
                                                 <div class="month">
                                                     <button id="prevMonth"><i class="fa-regular fa-chevron-left"></i></button>
                                                     <h3>6월 2024년</h3>
@@ -479,7 +479,7 @@
             //옵션 열고 닫기
             $('.option-wrapper > form > div > p').click(function() {
                 $(this).toggleClass('active');
-                $(this).next('ul').slideToggle('slow', function() {
+                $(this).next('.option-list').slideToggle('slow', function() {
                     $(this).toggleClass('active');
                 });
             });
