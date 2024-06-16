@@ -232,16 +232,104 @@
 }
 
 
-/* 풀캘린더 */
+/* 캘린더 */
 
-#calendar {
-    max-width: 300px;
-    margin: 20px auto;
+.calendar {
+    display: flex;
+    justify-content: space-between;
 }
-.fc-daygrid-day.fc-day-today {
-    background-color: #e6f7ff;
+.calendar .month {
+    text-align: center;
+    width: 700px;
+    border: 1px solid #ddd;
+    padding: 50px;
+    border-radius: 5px;
 }
-.fc-daygrid-day.active {
-    background-color: #007bff;
+.calendar .month h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.calendar .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+.calendar .days div {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.calendar .days .selected{
+    color: #fff;
+}
+.calendar .days .selected:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #00bbba;
+    color: white;
+    z-index: -1;
+}
+.times {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc((100% - 750px));
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px;
+    padding: 50px 20px;
+}
+
+.times h3{
+    font-weight: 700;
+    font-size: 18px;
+}
+.times button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bfe7e7;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    margin-right: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.times button:hover {
+    background-color: #00bbba;
+    color: white;
+}
+.times button.active{
+    background-color: #00bbba;
+    color: white;
+}
+.next-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin-top: 20px;
+}
+.next-wrapper button{
+    width: calc(50% - 10px);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.next-wrapper button#payButton.active{
+    background-color: #00bbba;
     color: white;
 }

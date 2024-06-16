@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약 시스템</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 600px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h2 {
+            margin: 0;
+        }
+        .calendar {
+            display: flex;
+            justify-content: space-between;
+        }
+        .calendar .month {
+            text-align: center;
+        }
+        .calendar .month h3 {
+            margin: 0;
+        }
+        .calendar .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .calendar .days div {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .calendar .days .selected {
+            background-color: #00aaff;
+            color: white;
+        }
+        .times {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .times button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+        .times button:hover {
+            background-color: #00aaff;
+            color: white;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .footer button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+        .footer button:hover {
+            background-color: #00aaff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>2급) 보이스 테라피 1회기권</h2>
+            <p>1회차 신청이며, 이후 회차는 앱에서 신청 가능해요. 달력에 없는 일정이라도 신청 후 협의가 가능해요.</p>
+        </div>
+        <div class="calendar">
+            <div class="month">
+                <h3>6월 2024년</h3>
+                <div class="days" id="days">
+                    <div>일</div>
+                    <div>월</div>
+                    <div>화</div>
+                    <div>수</div>
+                    <div>목</div>
+                    <div>금</div>
+                    <div>토</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div data-date="1">1</div>
+                    <div data-date="2">2</div>
+                    <div data-date="3">3</div>
+                    <div data-date="4">4</div>
+                    <div data-date="5">5</div>
+                    <div data-date="6">6</div>
+                    <div data-date="7">7</div>
+                    <div data-date="8">8</div>
+                    <div data-date="9">9</div>
+                    <div data-date="10">10</div>
+                    <div data-date="11">11</div>
+                    <div data-date="12">12</div>
+                    <div data-date="13">13</div>
+                    <div data-date="14">14</div>
+                    <div data-date="15">15</div>
+                    <div data-date="16">16</div>
+                    <div data-date="17">17</div>
+                    <div data-date="18" class="selected">18</div>
+                    <div data-date="19">19</div>
+                    <div data-date="20">20</div>
+                    <div data-date="21">21</div>
+                    <div data-date="22">22</div>
+                    <div data-date="23">23</div>
+                    <div data-date="24">24</div>
+                    <div data-date="25">25</div>
+                    <div data-date="26">26</div>
+                    <div data-date="27">27</div>
+                    <div data-date="28">28</div>
+                    <div data-date="29">29</div>
+                    <div data-date="30">30</div>
+                </div>
+            </div>
+            <div class="times">
+                <h3>예약 가능한 시간대</h3>
+                <div id="times">
+                    <button>18:00</button>
+                    <button>19:00</button>
+                    <button>20:00</button>
+                    <button>21:00</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button>건너뛰기</button>
+            <button>다음</button>
+        </div>
+    </div>
+
+  
+</body>
+</html>
