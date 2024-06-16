@@ -303,10 +303,13 @@
     background-color: #bfe7e7;
     cursor: pointer;
     height: 40px;
-    width: 90px;
+    width: calc((100% - 15px) / 4);
     margin-right: 5px;
     font-size: 16px;
     margin-bottom: 10px;
+}
+.times button:last-child{
+    margin-right: 0;
 }
 .times button:hover {
     background-color: #00bbba;
