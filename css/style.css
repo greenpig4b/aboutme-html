@@ -724,13 +724,31 @@
     height: 100px;
     overflow: hidden;
     transition: height 0.3s ease;
-    background: #f3f3f3;
-    padding: 20px;
+    background: #f8f8f8;
+    padding: 20px 20px 40px 20px;
     border-radius: 5px;
+    position: relative;
 }
+.review-item .review-content span{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 두 줄까지만 표시 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.2;
+}
+.review-item.expanded .review-content span{
+    display: block;
+}
+
 .review-item.expanded .review-content {
-    height: 180px;
+    height: fit-content;
 }
+
+.review-item.expanded .review-content::after {
+    opacity: 0;
+}
+
 .review-item .more-btn {
     position: absolute;
     bottom: 40px;
