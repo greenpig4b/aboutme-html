@@ -817,6 +817,7 @@
 }
 .card .card-body .card-title{
     font-weight: 700;
+    font-size: 18px;
 }
 .card .card-body button{}
 .card .card-body .card-text{
@@ -838,7 +839,9 @@
     display: block;
     width: 100%;
 }
-
+.card-body > a:hover p{
+    text-decoration: underline;
+}
 .category {
     font-size: 14px;
     font-weight: 700;
@@ -905,4 +908,37 @@
 .community-cartegory figure img{
     width: 100%;
     object-fit: cover;
+}
+.expert-reply{
+    padding: 20px;
+    background: #f8f8f8;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.expert-reply .expert-reply-info{
+    display: flex;
+    align-items: center;
+}
+.expert-reply .expert-reply-info figure{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.expert-reply .expert-reply-info figure img{
+    width: 100%;
+}
+.expert-reply .expert-reply-info .expert-reply-name{
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.expert-reply .reply-content{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.2;
 }
