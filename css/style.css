@@ -778,3 +778,131 @@
 }
 
 /* *************************** 전문가 후기 관련 CSS 끝 ***************************** */
+
+
+/* *************************** 전문가 커뮤니티 관련 CSS 시작 ***************************** */
+
+.comm-filter{
+    margin-top: 20px;
+}
+.comm-filter button{
+    height: 40px;
+    border: none;
+    width: 90px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+.comm-filter button.active{
+    color: #fff;
+}
+.card{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 1000px;
+    align-content: flex-start;
+}
+.card .card-body{
+    width: calc((100% - 40px) / 3);
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: -webkit-fill-available;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+.card .card-body:nth-child(3n){
+    margin-right: 0;
+}
+.card .card-body .card-title{
+    font-weight: 700;
+}
+.card .card-body button{}
+.card .card-body .card-text{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.card .card-body .card-link{
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+
+.card-body > a {
+    display: block;
+    width: 100%;
+}
+
+.category {
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.user-info {
+ 
+}
+
+.user-info figure {
+
+}
+
+.user-info img {
+
+}
+
+.user-info span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #999;
+}
+
+.card-text {
+
+}
+
+.link-wrapper {
+
+}
+
+.card-link {
+
+}
+
+.card-link.like {
+
+}
+
+.card-link.reply {
+
+}
+
+.card-link em.count {
+    margin-left: 5px;
+}
+
+.community-cartegory{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.community-cartegory .user-info{
+    display: flex;
+    align-items: center;
+}
+.community-cartegory figure{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.community-cartegory figure img{
+    width: 100%;
+    object-fit: cover;
+}
