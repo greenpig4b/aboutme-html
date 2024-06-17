@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url(reset.css);
 @import url(common.css);
-
-
+@import url(schedule.css);
+@import url(review.css);
 
 /* 상세보기 */
 #section01{
@@ -15,7 +15,7 @@
 }
 
 .page-wrapper {
-
+    position: relative;
 }
 
 .page-title {
@@ -33,7 +33,7 @@
 /* 페이지 내용 */
 
 .page-content {
-
+    margin-top: 50px;
 }
 
 .divide-wrapper {
@@ -393,20 +393,7 @@
 
 
 
-
-/* 결제 CSS */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* *************************** 유저 결제 관련 CSS 시작 ***************************** */
 
 .payment-section {
     background-color: #fff;
@@ -605,3 +592,171 @@ body {
 .payment-button:hover {
     background-color: #009695;
 }
+
+/* *************************** 유저 결제 관련 CSS 끝 ***************************** */
+
+
+/* *************************** 전문가 스케줄 관련 CSS 시작 ***************************** */
+
+.schedule {
+    /* 스케줄 컨테이너 전체 스타일 */
+}
+
+.schedule-title {
+    /* 스케줄 타이틀 영역 스타일 */
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.schedule-title span {
+    /* 각 타이틀 항목 스타일 */
+    font-weight: bold;
+    color: #fff;
+    width: 25%;
+    text-align: center;
+}
+.schedule-title span:nth-child(1){
+    
+}
+.schedule-title span:nth-child(2){
+   
+}
+.schedule-title span:nth-child(3){
+    
+}
+.schedule-title span:nth-child(4){
+    
+}
+
+.schedule-list {
+    /* 스케줄 리스트 영역 스타일 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.schedule-list li {
+    /* 각 리스트 항목 스타일 */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-item {
+    /* 스케줄 아이템 스타일 */
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.schedule-item figure {
+    width: 80px;
+    height: 80px;
+    background-image: url(/images/unknown_user.png);
+    background-size: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.schedule-item figure img {
+    /* 프로필 이미지 스타일 */
+
+}
+
+.schedule-item p{
+
+}
+
+.line-up{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.line-up button{
+    
+}
+
+/* *************************** 전문가 스케줄 관련 CSS 끝 ***************************** */
+
+
+
+
+/* *************************** 전문가 후기 관련 CSS 시작 ***************************** */
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review-header figure{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.review-header figure img{
+    width: 100%;
+    object-fit: cover;
+}
+.review-header span{
+    font-size: 14px;
+    font-weight: 700;
+}
+.review-header h2 {
+    margin: 0;
+}
+.review-list {
+    list-style: none;
+    padding: 0;
+}
+.review-item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+}
+.review-item .review-content {
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 5px;
+}
+.review-item.expanded .review-content {
+    height: 180px;
+}
+.review-item .more-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 55px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.review-item .more-btn span{
+    position: relative;
+}
+
+.review-item .more-btn span::after{
+    content: "\f078";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -15px;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.review-item .more-btn span.on::after{
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* *************************** 전문가 후기 관련 CSS 끝 ***************************** */

@@ -18,6 +18,18 @@
   height: 100%;
   cursor: default;
 }
+.defalut-btn{
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.main-btn:hover{
+
+}
 /* day */
 .day{
   font-weight: 700;
@@ -129,6 +141,9 @@
 /* 색상*/
 .main-background{
   background: #00bbba;
+}
+.main-background.defalut-btn:hover{
+  background: #009695;
 }
 .active-background{
   background:#009695;
@@ -457,4 +472,10 @@ footer li {
 
 .app-links img {
 width: 100%;
+}
+
+/* 페이지네이션 */
+.comm-pagination {
+  display: flex;
+  justify-content: center;
 }
