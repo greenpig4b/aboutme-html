@@ -812,6 +812,10 @@
     margin-bottom: 20px;
     height: fit-content;
 }
+.card .card-body.comdetail{
+    width: 100%;
+    border: none;
+}
 .card .card-body:nth-child(3n){
     margin-right: 0;
 }
@@ -895,6 +899,9 @@
     margin-bottom: 10px;
     align-items: center;
 }
+.community-cartegory.detail{
+    justify-content: space-between;
+}
 .community-cartegory .user-info{
     display: flex;
     align-items: center;
@@ -909,6 +916,16 @@
     width: 100%;
     object-fit: cover;
 }
+.community-cartegory .actions{}
+.community-cartegory .actions .right-actions{
+    display: flex;
+}
+.community-cartegory .actions .right-actions button{}
+.community-cartegory .actions .right-actions dropdown{}
+.community-cartegory .actions .right-actions dropdown > button{}
+.community-cartegory .actions .right-actions dropdown > button{}
+.community-cartegory .actions .right-actions dropdown .dorpdown-menu{}
+.community-cartegory .actions .right-actions dropdown .dorpdown-menu button.dropdown-item{}
 .expert-reply{
     padding: 20px;
     background: #f8f8f8;
